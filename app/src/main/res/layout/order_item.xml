@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/order_itemCosts"
+        android:layout_width="40dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="6dp"
+        android:text="Cost"
+        app:layout_constraintEnd_toStartOf="@+id/order_quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_foodName" />
+
+    <TextView
+        android:id="@+id/order_foodName"
+        android:layout_width="336dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:text="FoodName"
+        android:textSize="24sp"
+        app:fontFamily="cursive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_quantity"
+        android:layout_width="63dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:text="Quantity"
+        app:layout_constraintEnd_toStartOf="@+id/order_subTotal"
+        app:layout_constraintStart_toEndOf="@+id/order_itemCosts"
+        app:layout_constraintTop_toBottomOf="@+id/order_foodName" />
+
+    <TextView
+        android:id="@+id/order_subTotal"
+        android:layout_width="150dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Sub Total"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_foodName" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="422dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_quantity" />
+</androidx.constraintlayout.widget.ConstraintLayout>
